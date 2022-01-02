@@ -1,0 +1,19 @@
+h1{
+    color:darkblue;
+}
+p{
+    color:darkgreen;
+}
+body{
+    background-color:lightcoral;
+    text-align: center;
+}   
+img{
+    border: solid 1px rebeccapurple;
+    width: 500px;
+    height: 500px;
+}
+table{
+    text-align: center;
+    border: 2px solid black;
+}
