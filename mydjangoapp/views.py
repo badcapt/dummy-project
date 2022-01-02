@@ -21,6 +21,7 @@ def index(request):
     my_dir={'inside_me':"Appearing from the django edited text!"}
     return render(request,'mydjangoapp/index.html',context=my_dir)
     
+
 def info(request):
     Webpagelist = Accesspage.objects.order_by('date')
     date_dir={'access_records': Webpagelist}

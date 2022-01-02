@@ -21,9 +21,6 @@ from mydjangoapp import views
 
 urlpatterns = [
     url(r'^$',views.index,name='index'),
-    url(r'^access_info/', include('mydjangoapp.urls')),
-    url(r'^help/', views.help,name='help'),
-    url(r'^user/', views.users, name='user'),
-    url(r'^form/', views.form_view, name = 'form_name'),
-    path('admin/', admin.site.urls),
+    url(r'^app/', include('mydjangoapp.urls')),
+    url('admin/', admin.site.urls),
 ]

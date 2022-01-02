@@ -1,15 +1,7 @@
 <!DOCTYPE html>
+{% extends "mydjangoapp/base.html"%}
 {% load static%}
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static "css/new.css" %}">
-    <title>access information</title>
-</head>
-<body>
+{%block body_block%}
     <h1>Information of date accessed on</h1>
     <div class="infotable">
         {% if access_records %}
@@ -29,6 +21,4 @@
             <p>NO access record found!</p>
         {% endif %}
     </div>
-
-</body>
-</html>
+{%endblock%}
